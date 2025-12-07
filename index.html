@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculatrice Web - TP6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Solveur intelligent</h1>
+</header>
+
+<main>
+
+    <!-- Formulaire de calcul -->
+    <section class="calc-container">
+        <h2>Resolvons ensemble</h2>
+
+        <form id="calcForm">
+            <div class="form">
+                <label>Nombre A :</label>
+                <input type="number" id="numberA">
+            </div>
+
+            <div class="form">
+                <label>Nombre B :</label>
+                <input type="number" id="numberB">
+            </div>
+
+            <div class="form">
+                <label> choisir votre Opération :</label>
+                <select id="operation">
+                    <option value="+">Addition (+)</option>
+                    <option value="-">Soustraction (−)</option>
+                    <option value="*">Multiplication (×)</option>
+                    <option value="/">Division (÷)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Calculer</button>
+        </form>
+
+        <!-- Zone des erreurs -->
+        <p id="error-msg" class="error"></p>
+
+        <!-- Résultat -->
+        <h3 id="result"></h3>
+    </section>
+
+    <!-- Historique -->
+    <section class="history">
+        <h2>Historique des opérations</h2>
+        <ul id="historyList"></ul>
+    </section>
+
+</main>
+
+<footer>
+    <p> Mini Application Web Avancée — 2025</p>
+    <a href="info.php" class="btn">Voir la page PHP</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
